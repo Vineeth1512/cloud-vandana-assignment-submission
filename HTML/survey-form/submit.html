@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Survey Form</title>
+    <link rel="stylesheet" href="./submit.css">
+</head>
+
+<body>
+    <div class="header-form-wrapper">
+        <h1> Customer Survey Form</h1>
+        <div class="form-wrapper">
+            <form id="survey-form">
+                <div class="form-content">
+                    <div>
+                        <label>First Name:</label><br>
+                        <input id="firstName" type="text" required />
+                    </div>
+                    <div>
+                        <label>Last Name:</label><br>
+                        <input id="lastName" type="text" required />
+                    </div>
+                </div>
+                <div class="form-content">
+                    <div>
+                        <label>Email:</label><br>
+                        <input id="email" type="email" required />
+                    </div>
+                    <div>
+                        <label>Mobile No:</label><br>
+                        <input id="mblNo" type="number" required />
+                    </div>
+                </div>
+                <div class="form-content">
+                    <div>
+                        <label>Gender:</label><br>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="Other">
+                        <label for="other">Other</label>
+                    </div>
+                    <div>
+                        <label>Profession:</label><br>
+                        <input id="profession" type="text" required />
+                    </div>
+                </div>
+                <div class="form-content">
+                    <div class="date">
+                        <label>Date of Birth::</label><br>
+                        <input type="date" id="dob" required>
+                    </div>
+                    <div class="date">
+                        <label>Country:</label><br>
+                        <select id="country" required>
+                            <option value="">Select Country</option>
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="Canada">Canada</option>
+                            <option value="UK">UK</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="questions">
+                    <input class="submit-btn" type="submit" value="SUBMIT">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="popup-wrapper" id="popup"> 
+        <div class="popup-content-wrapper">
+            <h2 style="text-align: center;">Customer Survey Details</h2>
+            <div class="popup-content">
+                <div class="details-wrapper" >
+                    <span>First Name:</span>
+                   <span id="firstNameSpan"> </span>
+                </div>
+                <div class="details-wrapper">
+                    <span>Last Name:</span>
+                    <span id="lastNameSpan"> </span>
+                </div>
+            </div>
+            <div class="popup-content">
+                <div class="details-wrapper">
+                    <span>Email:</span>
+                    <span id="emailSpan"></span>
+                </div>
+                <div class="details-wrapper">
+                    <span>Mobile No:</span>
+                    <span id="mobileSpan"> </span>
+                </div>
+            </div>
+            <div class="popup-content">
+                <div  class="details-wrapper">
+                    <span>Gender:</span>
+                    <span id="genderSpan"> </span>
+                   
+                </div>
+                <div  class="details-wrapper">
+                    <span>Profession:</span>
+                    <span id="professionSpan"> </span>
+                </div>
+            </div>
+            <div class="popup-content">
+                <div class="details-wrapper" >
+                    <span>Date of Birth:</span>
+                    <span id="dobSpan"></span>
+                </div>
+                <div  class="details-wrapper">
+                    <span>Country:</span>
+                   <span id="countrySpan"></span>
+                </div>
+            </div>
+            <div class="questions">
+                <button id="closePopup" class="submit-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="./script.js"></script>
+</body>
+</html>
